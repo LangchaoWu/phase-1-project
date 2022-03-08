@@ -25,8 +25,9 @@ function createPokemonCard(pokemon){
         const types=[];
 
         for (const type in pokemon.types) {
+            let typeName=pokemon.types[type].type.name
             
-            types.push(pokemon.types[type].type.name)
+            types.push(typeName[0].toUpperCase()+typeName.slice(1))
         }
         
         const imgContainer=document.createElement("div")
@@ -39,18 +40,23 @@ function createPokemonCard(pokemon){
         const pokeInfo=document.createElement("div")
         pokeInfo.className="info"
         const span=document.createElement("span")
-        span.textContent=pokemon.id
+        span.textContent=`#${pokemon.id.toString().padStart(3,'0')}`
         span.className="number"
         const h3=document.createElement("h3")
+        h3.className='pokename'
         h3.textContent=name;
 
         pokeInfo.append(span,h3)
 
         types.forEach( function(type){
+            const typeDiv=document.createElement("div")
+            typeDiv.className=`type-box`
             const spanType=document.createElement("span")
             spanType.className=`back-ground-color-${type}`
+            spanType.id='type-span'
             spanType.textContent=type
-            pokeInfo.appendChild(spanType)
+            typeDiv.appendChild(spanType)
+            pokeInfo.append(typeDiv)
         })
 
 
