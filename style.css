@@ -10,8 +10,43 @@ body {
 h1{
     /* margin: 0 auto; */
     letter-spacing: 2px;
+    color: red;
+   
+}
+
+
+
+#name-input{
+    width: 250px;
+    height:30px;
+    outline: none;
+    margin:1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(235, 234, 225);
+    border-top: 2px solid rgb(235, 234, 225);
+    border-radius: 50px;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    color: rgb(83, 20, 199);
+    letter-spacing: 2px;
+}
+
+#sumbit-btn{
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:rgb(51, 224, 247);
+    background-color: rgb(235, 234, 225);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px rgb(233, 225, 159);
 
 }
+
 
 #PokeCard-container {
     display:flex;
@@ -23,12 +58,14 @@ h1{
 }
 
 .pokemon{
-    background-color: rgb(243, 239, 239);
+   
+    background-color: rgb(235, 234, 225);
     border-radius: 20px;
     text-align: center;
     margin: 10px;
     box-shadow: 3px 3px 15px rgb(243, 182, 112);
 }
+
 
 .pokemon .img-container{
     background-color: white;
@@ -74,54 +111,106 @@ h1{
     
 }
 
-.pokemon .back-ground-color-Grass{
+.img-container :hover{
+    position: relative;
+    top:-10px ;
+}
+
+
+
+.back-ground-color-Grass{
     background: greenyellow;
 }
-.pokemon .back-ground-color-Poison{
+.back-ground-color-Poison{
     background: rgb(182, 17, 182);
 }
-.pokemon .back-ground-color-Fire{
+.back-ground-color-Fire{
     background: orange;
 }
-.pokemon .back-ground-color-Water{
+.back-ground-color-Water{
     background: rgb(72, 163, 248);
 }
-.pokemon .back-ground-color-Bug{
+.back-ground-color-Bug{
     background: green;
 }
-.pokemon .back-ground-color-Normal{
+.back-ground-color-Normal{
     background: rgb(172, 171, 171);
 }
-.pokemon .back-ground-color-Electric{
+.back-ground-color-Electric{
     background: yellow;
 }
-.pokemon .back-ground-color-Ground{
+.back-ground-color-Ground{
     background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
 }
-.pokemon .back-ground-color-Fairy{
+.back-ground-color-Fairy{
     background: pink;
 }
-.pokemon .back-ground-color-Fighting{
+.back-ground-color-Fighting{
     background: #fd7d24;
 }
-.pokemon .back-ground-color-Ghost{
+.back-ground-color-Ghost{
     background: rgb(82, 16, 82);
 }
-.pokemon .back-ground-color-Psychic{
+.back-ground-color-Psychic{
     background: rgb(238, 123, 143);
 }
-.pokemon .back-ground-color-Ice{
+.back-ground-color-Ice{
     background: rgb(94, 192, 248);
 }
-.pokemon .back-ground-color-Rock{
+.back-ground-color-Rock{
     background: #a38c21;
 }
-.pokemon .back-ground-color-Flying{
+.back-ground-color-Flying{
     background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
 }
-.pokemon .back-ground-color-Dragon{
+.back-ground-color-Dragon{
     background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
 }
-.pokemon .back-ground-color-Steel{
+.back-ground-color-Steel{
     background: rgb(218, 211, 211);
+}
+
+table{
+    margin-top: 2px;
+    text-align: center;
+    box-shadow: 1px 1px 0px rgb(240, 192, 221);
+    background-color: rgb(245, 244, 214);
+    padding: 5px;
+    border-radius: 10px;
+    
+    
+}
+
+td {
+    border-radius: 10px;
+
+}
+table td{
+    background-color: rgb(225, 238, 207);
+}
+
+.type-td{
+    width: 50%;
+}
+#type-span-2{
+    display: inline-block;
+    margin: auto;
+    padding:5px 10px;
+    border-radius: 5px;
+   
+}
+#letter{
+    font-size: large;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+
+
+.height-info{
+   width:100% 
+}
+
+.weight-info{
+    width:100%
 }
